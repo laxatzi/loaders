@@ -1,0 +1,90 @@
+<html lang="en">
+   <head>
+	 <meta charset="UTF-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	 <title>Pure css spinner</title>
+	<!--
+	     STYLE
+	
+	   html, 
+body  {
+    margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, sans-serif;
+    line-height: 145%;
+	font-size: 20px;
+	box-sizing: border-box;
+	}
+	img  {
+		max-width: 100%;
+		height: auto;
+		vertical-align: middle;
+		border: 0;
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6  {
+		margin: 0;
+		padding:0;
+		line-height: 250%;
+		}
+		
+		.container  {
+		     width: 70%;
+			 margin: 1rem auto;
+			 font-size:.9rem;
+		}
+		
+		/*  Spinner */
+		
+		.spinner:before {
+		   content: "";
+		   position: absolute;
+		   top: 50%;
+		   left: 50%;
+		   height: 3rem;
+		   width: 3rem;
+		   margin-top: -2rem;
+		   margin-left: -3rem;
+		   border-radius: 50%;
+		   border-right: 5px solid transparent;
+		   border-top: 5px solid  #6A6BCD;
+		   animation: toSpin 700ms infinite linear;
+		}
+		
+ 
+ @keyframes toSpin  {
+     to {
+	     transform: rotate(360deg);
+	 }
+ }
+	
+	-->	
+   </head>
+	<body>
+		<div class="container">
+		  <h1>Example of a simple css spinner</h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in quam et metus dictum tincidunt.
+       		  Etiam a dolor nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida efficitur nisl, a porttitor
+			  nulla laoreet a. Vivamus et scelerisque libero. Etiam ut urna nec libero facilisis bibendum. Mauris ante est.
+		  </p>
+		 
+		</div>
+		
+		<script>
+		     document.querySelector(".container").style.display= "none";
+			 document.querySelector("body").classList.add("spinner");
+			 
+			 <!--Mimicing a server request-->
+			 setTimeout(function(){
+			 	document.querySelector("body").classList.remove("spinner");
+                document.querySelector(".container").style.display= "block";
+			 }, 4000);
+		</script>
+	</body>
+</html>
