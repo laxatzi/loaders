@@ -68,7 +68,7 @@
  .spinner-2  {
              animation: spin 2s linear infinite ;
  } 
-  .spinner-2:before, spinner-2:after  {
+  .spinner-2:before, .spinner-2:after  {
     height: 20px 
     width: 20px
     background: orangered
