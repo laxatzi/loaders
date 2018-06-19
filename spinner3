@@ -90,7 +90,7 @@
     transform: translateY(30px)
   }
   }
-@keyframes spinn  {
+@keyframes spin  {
   0%  {
     transform: rotate(0deg)  }
   100%  {
