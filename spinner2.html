@@ -14,13 +14,15 @@
 	 </p>
       </div>
       <script>
+	      
           document.querySelector(".container").style.display= "none";
 	  document.querySelector("body").classList.add("spinner");
-	 Mimicing a server request 
-			 setTimeout(function(){
-			 	document.querySelector("body").classList.remove("spinner");
-                document.querySelector(".container").style.display= "block";
-			 }, 4000);
+	/* Mimicking a server request */ 
+	 setTimeout(function(){
+	     document.querySelector("body").classList.remove("spinner");
+             document.querySelector(".container").style.display= "block";
+	  }, 4000);
+	      
       </script>
    </body>
 </html>
